@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+    <title>  login </title>
+{% endblock %}
+
+ 
+{% block content %}
+
+    <h2>{{msj}} </h2>
+
+    <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ formulario.as_p }}
+        <input type="submit" value="Login">
+        <a href="{% url 'vista_register' %}">Registrarse</a>
+    </form>
+
+
+
+    
+{% endblock %}
+   

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+    <title>  Contacto </title>
+{% endblock %}
+
+ 
+{% block content %}
+
+    {% if info_enviado%}
+        <h2>Informacion: </h2>
+        {{email}}
+        {{title}}
+        {{text}}
+    {%else %}
+        <form action="" method="POST">
+            {%csrf_token%}
+            {{formulario.as_p}}
+            <input type="submit" name="enviar">
+        </form>
+    {%endif%}
+
+{% endblock %}

@@ -1,0 +1,9 @@
+heroku login
+    correo
+    contraseña
+
+heroku run python manage.py makemigrations --app tiendaadsi
+heroku run python manage.py migrate --app tiendaadsi
+heroku run python manage.py createsuperuser --app tiendaadsi
+
+

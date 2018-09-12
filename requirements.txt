@@ -5,3 +5,4 @@ gunicorn==19.9.0
 Pillow==5.2.0
 pytz==2018.4
 virtualenv==16.0.0
+psycopg2==2.7.5

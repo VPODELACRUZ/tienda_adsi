@@ -87,8 +87,14 @@ WSGI_APPLICATION = 'tienda.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.path.join(BASE_DIR, 'postgressql'),
+        'Host': 'ec2-174-129-32-37.compute-1.amazonaws.com',
+        'Database' : 'dc3673bmqghuct',
+        'User' : 'rgsabsyyoionkm',
+        'Port' : '5432',
+        'Password' : '3411c350fb14c128059a9e784d6be2a4ab0d41424f3ff8feeeaa19df38fa4394'
+
     }
 }
 
